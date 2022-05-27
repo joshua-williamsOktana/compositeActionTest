@@ -9,16 +9,16 @@ outputs:
   maven-status:
     description: "Maven Status"
     value: ${{ steps.maven-build.outputs.status }}
-env:
-    action_repo: ${{ env.GITHUB_ACTION_REPOSITORY }}
-    action_branch:  "main"
+
 
 runs:
   using: "composite"
   
   
   steps: 
-   
+    env:
+      action_repo: ${{ env.GITHUB_ACTION_REPOSITORY }}
+      action_branch:  "main"
   - name: "Say Hello Mona it's Monday"
     run: echo "$action_repo $action_branch."
   - name: Clone Repo hosting the composite action

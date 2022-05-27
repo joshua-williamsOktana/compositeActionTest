@@ -24,5 +24,10 @@ runs:
         distribution: 'temurin'
         cache: maven
   - id: maven-build
-    run: echo "::set-output name=status::$(mvn -B package --file test/pom.xml)"
+    run: |
+      status1 = "$(mvn -B package --file test/pom.xml)"
+      status1 = "${status1//$'\n'/'%0A'}"
+      status1 = "${status1//$'\r'/'%0D'}
+      status1 = "${status1//'%'/'%25'}"
+      echo "::set-output name=status::$status1"
     shell: bash

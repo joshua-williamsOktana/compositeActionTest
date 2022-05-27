@@ -34,7 +34,7 @@ runs:
         cache: maven
   - id: maven-build
     run: |
-      MY_STRING=$(mvn -B package --file test/pom.xml)
+      MY_STRING=$(mvn -B -Dmaven.test.failure.ignore=true package --file test/pom.xml)
       MY_STRING="${MY_STRING//'%'/'%25'}"
       MY_STRING="${MY_STRING//$'\n'/'%0A'}"
       MY_STRING="${MY_STRING//$'\r'/'%0D'}"

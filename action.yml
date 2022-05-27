@@ -10,9 +10,9 @@ outputs:
     description: "Maven Status"
     value: ${{ steps.maven-build.outputs.status }}
 env:
-    action_repo: ${{ github.action_repository }}
-    action_branch:  ${{ github.action_ref }}
-    
+    action_repo: ${{ env.GITHUB_ACTION_REPOSITORY }}
+    action_branch:  "main"
+
 runs:
   using: "composite"
   

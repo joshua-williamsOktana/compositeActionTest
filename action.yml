@@ -13,7 +13,7 @@ runs:
   using: "composite"
   steps: 
   - name: Clone Repo hosting the composite action
-    uses: actions/checkout@main
+    uses: actions/checkout@v3
     with:
         repository: joshua-williamsOktana/compositeActionTest
 

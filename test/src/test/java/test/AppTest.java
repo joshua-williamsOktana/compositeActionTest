@@ -17,4 +17,9 @@ public class AppTest
     {
         assertTrue( true );
     }
+    @Test
+    public void secondTest()
+    {
+        assertTrue( false );
+    }
 }

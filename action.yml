@@ -15,7 +15,7 @@ runs:
   - name: Clone Repo hosting the composite action
     uses: actions/checkout@v3
     with:
-        repository: joshua-williamsOktana/compositeActionTest
+        repository: ${{github.action_repository	}}
         ref: main
 
   - name: Set up JDK 11

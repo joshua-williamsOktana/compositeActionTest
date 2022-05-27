@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: test.AppTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.055 s <<< FAILURE! - in test.AppTest
-secondTest(test.AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.06 s <<< FAILURE! - in test.AppTest
+secondTest(test.AppTest)  Time elapsed: 0.005 s  <<< FAILURE!
 java.lang.AssertionError
 	at test.AppTest.secondTest(AppTest.java:23)
 

@@ -34,10 +34,16 @@ runs:
         cache: maven
   - id: maven-build
     run: |
-      MY_STRING=$(mvn -B -Dmaven.test.failure.ignore=true package --file test/pom.xml)
+      MY_STRING=$(mvn -B package --file test/pom.xml)
       MY_STRING="${MY_STRING//'%'/'%25'}"
       MY_STRING="${MY_STRING//$'\n'/'%0A'}"
       MY_STRING="${MY_STRING//$'\r'/'%0D'}"
       echo "::set-output name=status::$(echo $MY_STRING)"
-    
     shell: bash
+  - name: Test Report
+    uses: dorny/test-reporter@v1
+    if: success() || failure()    # run this step even if previous step failed
+    with:
+      name: JEST Tests            # Name of the check run which will be created
+      path: reports/TEST-*.xml    # Path to test results
+      reporter: jest-junit        # Format of test results

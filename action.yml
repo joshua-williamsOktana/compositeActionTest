@@ -22,6 +22,7 @@ runs:
       action_repo: ${{ env.GITHUB_ACTION_REPOSITORY }}
       action_branch:  "main"
     run: echo "$action_repo $action_branch."
+    shell: bash
   - name: Clone Repo hosting the composite action
     uses: actions/checkout@v3
     with: 

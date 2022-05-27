@@ -21,4 +21,4 @@ runs:
         cache: maven
 
     - run: mvn -B package --file ./test/pom.xml
-        
+      shell: bash

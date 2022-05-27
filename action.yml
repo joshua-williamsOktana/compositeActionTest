@@ -12,9 +12,9 @@ outputs:
 runs:
   using: "composite"
   env:
-      action_repo: ${{ github.action_repository }}
+      action_repo: "${{ github.action_repository }}"
   env:
-      action_branch:  ${{ github.action_ref }}
+      action_branch:  "${{ github.action_ref }}"
    - name: "Say Hello Mona it's Monday"
         run: echo "$action_repo $action_branch."
   steps: 

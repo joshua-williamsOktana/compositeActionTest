@@ -6,9 +6,9 @@ inputs:
     required: true
     default: 'World'
 outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-number }}
+  maven-status:
+    description: "Maven Status"
+    value: ${{ steps.maven-build.outputs.status }}
 runs:
   using: "composite"
   steps: 
@@ -23,7 +23,6 @@ runs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-
-  - name: Build with Maven
-    run: mvn -B package --file test/pom.xml
+  - id: maven-build
+    run: echo "::set-output name=status::$(mvn -B package --file test/pom.xml)"
     shell: bash

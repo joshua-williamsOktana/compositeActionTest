@@ -30,4 +30,5 @@ runs:
       status1 = "${status1//$'\r'/'%0D'}
       status1 = "${status1//'%'/'%25'}"
       echo "::set-output name=status::$status1"
+      |
     shell: bash

@@ -9,12 +9,14 @@ outputs:
   maven-status:
     description: "Maven Status"
     value: ${{ steps.maven-build.outputs.status }}
+env:
+    action_repo: ${{ github.action_repository }}
+    action_branch:  ${{ github.action_ref }}
+    
 runs:
   using: "composite"
   
-  env:
-    action_repo: ${{ github.action_repository }}
-    action_branch:  ${{ github.action_ref }}
+  
   steps: 
    
   - name: "Say Hello Mona it's Monday"

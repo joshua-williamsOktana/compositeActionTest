@@ -13,8 +13,8 @@ runs:
   using: "composite"
   steps: 
 
-    - run: pwd
+    - run: echo ${pwd}
       shell: bash
-    - run: ls
+    - run: echo ${ls}
       shell: bash
 

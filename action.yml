@@ -19,6 +19,7 @@ runs:
         ref: main
   - name: Test
     run: echo " ${{github.action_repository	}}"
+    shell: bash
 
 
   - name: Set up JDK 11

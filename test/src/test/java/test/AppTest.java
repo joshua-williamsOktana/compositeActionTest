@@ -20,6 +20,6 @@ public class AppTest
     @Test
     public void secondTest()
     {
-        assertTrue( true );
+        assertTrue( false );
     }
 }

@@ -6,7 +6,7 @@ jobs:
     name: Run Maven Test
     steps:
       - id: foo
-        uses: joshua-williamsOktana/compositeActionTest@v10
+        uses: joshua-williamsOktana/compositeActionTest@main
       - name: Test Status
         run: echo "${{ steps.foo.outputs.maven-status }}"
         shell: bash

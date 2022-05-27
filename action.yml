@@ -23,12 +23,12 @@ runs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-  - name: run maven
+  - id: maven-build
     run: |
       MY_STRING=$(mvn -B package --file test/pom.xml)
       MY_STRING="${MY_STRING//'%'/'%25'}"
       MY_STRING="${MY_STRING//$'\n'/'%0A'}"
       MY_STRING="${MY_STRING//$'\r'/'%0D'}"
       echo "::set-output name=status::$MY_STRING"
-    id: maven-build
+    
     shell: bash

@@ -17,7 +17,6 @@ runs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
-      shell: bash    
-    - run: mvn -B package --file ./test/pom.xml
+    
+    - run: mvn -B package --file $GITHUB_ACTION_PATH/test/pom.xml
       shell: bash

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.AppTest" time="0.069" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.AppTest" time="0.078" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/test-classes:/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/classes:/Users/joshuawilliams/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/joshuawilliams/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/test-classes:/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/classes:/Users/joshuawilliams/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/joshuawilliams/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire/surefirebooter13506832236954100726.jar /Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire 2022-05-27T14-00-24_955-jvmRun1 surefire5143915189698459639tmp surefire_012606455523257630541tmp"/>
+    <property name="sun.java.command" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire/surefirebooter7212304238832048179.jar /Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire 2022-05-27T14-22-58_403-jvmRun1 surefire14607497365909623896tmp surefire_05088444911406356836tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/test-classes:/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/classes:/Users/joshuawilliams/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/joshuawilliams/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/test-classes:/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/classes:/Users/joshuawilliams/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/joshuawilliams/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/joshuawilliams"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire/surefirebooter13506832236954100726.jar"/>
+    <property name="surefire.real.class.path" value="/Users/joshuawilliams/Incubator Projects/compositeActionTest/test/target/surefire/surefirebooter7212304238832048179.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+9"/>
     <property name="user.name" value="joshuawilliams"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="test.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="test.AppTest" time="0.003"/>
 </testsuite>

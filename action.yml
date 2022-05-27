@@ -12,9 +12,5 @@ outputs:
 runs:
   using: "composite"
   steps: 
-
-    - run: echo ${pwd}
+    - run: mvn -B package --file ./test/pom.xml
       shell: bash
-    - run: echo ${ls}
-      shell: bash
-

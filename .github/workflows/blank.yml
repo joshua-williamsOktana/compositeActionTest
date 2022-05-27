@@ -1,14 +1,12 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  run_maven_test:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Run Maven Test
     steps:
-      - uses: actions/checkout@v3
       - id: foo
-        uses: joshua-williamsOktana/compositeActionTest@v5
-        with:
-          who-to-greet: 'Mona the Octocat'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+        uses: joshua-williamsOktana/compositeActionTest@main
+      - name: Test Status
+        run: echo "${{ steps.foo.outputs.maven-status }}"
         shell: bash

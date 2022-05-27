@@ -16,10 +16,11 @@ runs:
   
   
   steps: 
+    
+  - name: "Say Hello Mona it's Monday"
     env:
       action_repo: ${{ env.GITHUB_ACTION_REPOSITORY }}
       action_branch:  "main"
-  - name: "Say Hello Mona it's Monday"
     run: echo "$action_repo $action_branch."
   - name: Clone Repo hosting the composite action
     uses: actions/checkout@v3

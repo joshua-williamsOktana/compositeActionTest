@@ -20,5 +20,5 @@ runs:
         distribution: 'temurin'
         cache: maven
 
-    - run: mvn -B package --file ./test/pom.xml
+    - run: mvn -B package --file ${{github.action_path}}/test/pom.xml
       shell: bash

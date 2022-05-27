@@ -25,10 +25,9 @@ runs:
         cache: maven
   - id: maven-build
     run: |
-      status1="$(mvn -B package --file test/pom.xml)"
-      status1="${status1//$'\n'/'%0A'}"
-      status1="${status1//$'\r'/'%0D'}"
-      status1="${status1//'%'/'%25'}"
-      echo "::set-output name=status::$status1"
-      
+      MY_STRING=$(mvn -B package --file test/pom.xml)
+      MY_STRING="${MY_STRING//'%'/'%25'}"
+      MY_STRING="${MY_STRING//$'\n'/'%0A'}"
+      MY_STRING="${MY_STRING//$'\r'/'%0D'}"
+      echo "::set-output name=status::$MY_STRING"
     shell: bash
